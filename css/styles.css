@@ -564,9 +564,11 @@ img {
   margin-top: 72px;
   margin-bottom: 16px;
 }
-
-.pop-up-field {
+.pop-up-form-field {
   margin-bottom: 8px;
+}
+
+.pop-up-input-wrapper {
   border: none;
   display: flex;
   flex-direction: column;
