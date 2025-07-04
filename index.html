@@ -557,7 +557,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="pop-up">
         <button type="button" class="pop-up-close-btn">
           <svg class=".pop-up-icon-close" width="8" height="8">
@@ -568,7 +568,7 @@
           Leave your contacts and we will call you back
         </p>
         <form class="pop-up-form">
-          <fieldset class="pop-up-field">
+          <div class="pop-up-field">
             <label class="pop-up-iput-lable" for="name"> Name </label>
             <svg class="pop-up-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-person"></use>
@@ -579,8 +579,8 @@
               name="name"
               class="pop-up-field-input"
             />
-          </fieldset>
-          <fieldset class="pop-up-field">
+          </div>
+          <div class="pop-up-field">
             <label class="pop-up-iput-lable" for="phone"> Phone </label>
             <svg class="pop-up-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-phone"></use>
@@ -591,8 +591,8 @@
               name="phone"
               class="pop-up-field-input"
             />
-          </fieldset>
-          <fieldset class="pop-up-field">
+          </div>
+          <div class="pop-up-field">
             <label class="pop-up-iput-lable" for="email"> Email </label>
             <svg class="pop-up-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-email"></use>
@@ -603,23 +603,24 @@
               name="email"
               class="pop-up-field-input"
             />
-          </fieldset>
-          <fieldset class="pop-up-field">
+          </div>
+          <div class="pop-up-field">
             <label class="pop-up-textarea-lable" for="comment"> Comment </label>
             <textarea
               class="pop-up-field pop-up-field-textarea"
               name="comment"
+              id="comment"
               rows="5"
               placeholder="Text input"
             ></textarea>
-          </fieldset>
+          </div>
           <div class="pop-up-field-checkbox">
             <input
               type="checkbox"
               id="pop-up-privacy"
               name="pop-up-privacy"
               value="true"
-              class="pop-up-field-input-accept"
+              class="pop-up-field-input-accept visually-hidden"
             />
             <label for="pop-up-privacy" class="pop-up-accept-label">
               <span class="pop-up-checkbox-span checkbox-span">
@@ -628,7 +629,9 @@
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a class="pop-up-privacy-link" href="">Privacy Policy</a></label
+              <a class="pop-up-privacy-link visually-hidden" href=""
+                >Privacy Policy</a
+              ></label
             >
             <button type="submit" class="pop-up-field-btn-send">Send</button>
           </div>
