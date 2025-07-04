@@ -500,6 +500,7 @@ img {
 }
 
 .pop-up {
+  padding: 72px 24px 24px 24px;
   top: 50%;
   left: 50%;
   position: absolute;
