@@ -573,9 +573,11 @@ img {
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-bottom: 16px;
 }
 
 .pop-up-iput-lable {
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
